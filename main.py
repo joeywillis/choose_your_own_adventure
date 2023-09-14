@@ -4,7 +4,7 @@ def start_game():
     print("The silence is deafening, and a sense of dread permeates the air.")
     print("Mikkel knows he needs to find a way to escape, but the station holds many secrets...")
 
-    choice = (input(" \n Type '1' to explore the control room or '2' to explore the Living Quarters. Type 'help' for assistance. "))
+    choice = input(" \n Type '1' to explore the control room or '2' to explore the Living Quarters. Type 'help' for assistance. ")
 
     if choice.lower() == 'help':
             display_help_menu()
@@ -51,11 +51,11 @@ def explore_control_room():
     print("As he navigates through the dark corridors, he comes across two doors.")
     print("One leads to the control room, while the other leads to what seems like a laboratory.")
     
-    choice = int(input("\n Type '1' to go into the control room or '2' to enter the laboratory. "))
+    choice = (input("\n Type '1' to go into the control room or '2' to enter the laboratory. "))
 
-    if choice == 1:
+    if choice == '1':
         enter_control_room()
-    elif choice == 2:
+    elif choice == '2':
         enter_lab()
     else:
         invalid_choice()
@@ -68,11 +68,11 @@ def enter_control_room():
     print("It reveals that the station was abandoned due to a catastrophic event, but there might be a functioning escape pod in the docking bay.")
     print("Mikkel decides to head there.")
 
-    choice = int(input("\n Type '1' to attempt to launch the pod or '2' to search for manuals. "))
+    choice = input("\n Type '1' to attempt to launch the pod or '2' to search for manuals. ")
 
-    if choice == 1:
+    if choice == '1':
         attempt_pod()
-    elif choice == 2:
+    elif choice == '2':
         search_manuals()
     else:
         invalid_choice()
@@ -99,11 +99,11 @@ def enter_lab():
     print("He also finds a logbook that hints at the existence of a hidden safe room within the station.")
     print("Curious, Mikkel decides to find this safe room.")
 
-    choice = int(input("\n Type '1' to find the safe room or '2' to continue exploring. "))
+    choice = input("\n Type '1' to find the safe room or '2' to continue exploring. ")
 
-    if choice == 1:
+    if choice == '1':
         safe_room()
-    elif choice == 2:
+    elif choice == '2':
         explore()
     else:
         invalid_choice()
@@ -129,11 +129,11 @@ def explore():
 def docking_bay():
     print("\n Believing that time is of the essence, Mikkel decides to head straight to the docking bay, bypassing the control room and laboratory.")
 
-    choice = int(input("\n Type '1' to look for a functional escape pod or type '2' to search for supplies "))
+    choice = input("\n Type '1' to look for a functional escape pod or type '2' to search for supplies ")
 
-    if choice == 1:
+    if choice == '1':
         escape_pod()
-    elif choice == 2:
+    elif choice == '2':
         search_supplies()
     else:
         invalid_choice()
@@ -144,11 +144,11 @@ def escape_pod():
     print("However, it has room for only one person, and the launch sequence is complicated.")
     print("Mikkel has to decide whether to launch immediately or try to find more information to ensure a safe escape.")
 
-    choice = int(input("\n Type '1' to launch immediately or type '2' to find more information. "))
+    choice = input("\n Type '1' to launch immediately or type '2' to find more information. ")
 
-    if choice == 1:
+    if choice == '1':
         launch_immediately()
-    elif choice == 2:
+    elif choice == '2':
         find_info()
     else:
         invalid_choice()
@@ -158,11 +158,11 @@ def search_supplies():
     print("\n Before attempting to escape, Mikkel decides to search for supplies that might help him survive on the desolate planet below, if necessary.")
     print("In his search, he stumbles upon a group of survivors who have been hiding in the station.")
 
-    choice = int(input("\n Type '1' to join survivors or type '2' to venture out alone. "))
+    choice = input("\n Type '1' to join survivors or type '2' to venture out alone. ")
 
-    if choice == 1:
+    if choice == '1':
         join_survivors()
-    elif choice == 2:
+    elif choice == '2':
         venture_alone()
     else:
         invalid_choice()
